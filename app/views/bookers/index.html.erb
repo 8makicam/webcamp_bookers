@@ -18,6 +18,11 @@
 <td>
 <%= list.body %>
 </td>
+<td>
+<%= link_to "show", bookers_path(list.id) %>
+<%= link_to "edit", edit_book_path(list.id) %>
+<%= link_to "destroy", destroy_book_path(list.id), method: :delete, "data-confirm" => "Are you sure?" %>
+</td>
 </tr>  
 <% end %>
 </tbody>   

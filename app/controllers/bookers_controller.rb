@@ -27,9 +27,9 @@ class BookersController < ApplicationController
   
   def update
     @book = Book.find(params[:id])
-    book.update(book_params)
+    book.update(list_params)
     redirect_to bookers_path(book.id)
-    end
+  end
   
   private
   
